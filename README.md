@@ -1,2 +1,4 @@
 # AIChE SU SC
- The official page of the American Institute of Chemical Engineers, Suez University Student Chapter (AIChE SUSC)
+AIChE is the world's leading organization for chemical engineering professionals, AIChE stands for " American Institute of Chemical Engineers" . It is the world's leading organization for chemical engineering professionals. It's a nonprofit organization with more than 60,000 members from over 110 countries worldwide.
+AIChE, Suez University Student Chapter (AIChE SUSC) was founded in 2013 as a branch from AIChE International, and it includes a group of undergraduate students, dedicated to the advancement of the academic learning techniques, and personal development systems, trying to create links between the university and the industry.
+As a member, you will improve your technical and soft skills, you can access information on recognized and promising chemical engineering processes and methods. Connect with a global network of intelligent, resourceful colleagues and their shared wisdom. Find learning opportunities from recognized authorities. Move forward professionally with AIChE and enrich the world we live in.
