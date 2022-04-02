@@ -1,0 +1,149 @@
+/********************** CV DESIGN *********************/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap");
+
+.resume {
+width: 794px;
+height: 1123px;
+overflow-y: hidden;
+font-family: 'Arial';
+display: grid;
+grid-template-columns: auto auto auto;
+line-height: 18px;
+}
+.resume .sectionTitle {
+font-size: 18px;
+font-weight: 700;
+text-transform: capitalize;
+}
+.resume-left_headings {
+    color: #fff;
+}
+.sectionTxtBold {
+font-weight: 700;
+text-transform: capitalize;
+display: block;
+}
+.progress-bar {
+margin-top: 5px;
+width: 100%;
+height: 15px;
+background-color: #00315c;
+}
+.progress-bar-white {
+width:50%;
+height: 100%;
+background-color: #fff;
+}
+.resume-left_sections {
+margin-top: 30px;
+}
+
+
+.resume-left {
+background-color: #003D73;
+height: 100%;
+width: 200px;
+padding: 0px 15px;
+color: #fff;
+word-break: break-all;
+}
+.resume-left .name {
+font-size: 28px;
+line-height: 35px;
+font-weight: bold;
+padding-top: 15px;
+}
+.resumeTitle {
+font-size: 14px;
+padding-top: 3px;
+}
+.sectionTitleRight {
+color: #003D73;
+}
+/* head*/
+.personal-info {
+position: relative;
+margin-top: 20px;
+}
+.personal-info-head {
+margin: 10px -15px;
+background-color: #00315c;
+padding: 7px 15px;
+line-height: 1.5;
+}
+.info-list div {
+margin-bottom: 10px;
+}
+
+
+.resume_right {
+padding-left: 15px;
+padding-right: 15px;
+float: right;
+width: 534px;
+letter-spacing: 0.2px;
+}
+.summary {
+padding-top: 15px;
+font-size: 14px;
+color: #343434;
+font-variant-ligatures: none;
+font-weight: 400;
+padding-bottom: 20px;
+}
+.resume_right-sections {
+margin-top: 20px;
+}
+.resume-right_headings {
+border-top: 1px solid #d5d6d6;
+border-bottom: 1px solid #d5d6d6;
+letter-spacing: 0px;
+padding: 5px 0;
+}
+
+/********** WORK SECTION ***********/
+.work {
+display: grid;
+grid-template-columns: auto auto auto;
+margin-top: 10px;
+}
+.work-date {
+width: 100px;
+}
+.start-date,.end-date {
+font-size: 14px;
+color: #343434;
+font-weight: 400;
+display: block;
+}
+.work-info {
+width: 430px
+}
+.work-info span {
+display: block;
+}
+.work-head {
+font-weight: bold;
+line-height: 18px;
+}
+.work-location {
+font-style: italic;
+font-size: 14px;
+font-weight: 400;
+margin-top: 4px;
+margin-bottom: 4px;
+}
+.work-details ul{
+list-style-type: none;
+padding: 0;
+margin: 0;
+font-size: 11px;
+font-weight: 400;
+line-height: 18px;
+color: #343434;
+}
+.resume ul li {
+list-style-type: disc;
+margin: 0 0 0 16px;
+padding: 0;
+}

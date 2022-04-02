@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;500&display=swap');
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.box {
+  width:800px;
+  margin:0 auto;
+}
+.active_tab1 {
+  background-color:#fff;
+  color:#333;
+  font-weight: 600;
+}
+.inactive_tab1
+{
+background-color: #f5f5f5;
+color: #333;
+cursor: not-allowed;
+}
+.has-error
+{
+border-color:#cc0000;
+background-color:#ffff99;
+}
+
+.error_personal_info,
+.error_work_history,
+.error_education {
+display: none;
+}
+
+
+.skill {
+padding: 10px 15px;
+background: #ddd;
+margin-top: 10px;
+}
+.skill:hover {
+background: #eee;
+transition: all 0.2s ease-in-out;
+border-left: 5px solid #0ff;
+}
+.active,.fade {
+  transition: all 0.3s ease-in-out;
+}
+
+/************* NAV BAR DESKTOP ***********/
+.nav-cv {
+  height: 60px;
+  background: #fff;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.16);
+}
+.nav-cv ul {
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  counter-reset: item;
+
+}
+.nav-cv ul li {
+  padding-right: 0px;
+  padding-left: 0px;
+
+}
+.nav-cv ul li a {
+  text-decoration: none;
+  color: #d5dae1;
+cursor: default;
+pointer-events: none;
+}
+
+.nav-cv ul li::before{
+  counter-increment: item;
+content: counter(item);
+border: 2px solid #d5dae1;
+background: #fff;
+border-radius: 50%;
+width: 16px;
+height: 16px;
+display: inline-block;
+vertical-align: middle;
+margin-right: 6px;
+text-align: center;
+font-size: 12px;
+font-weight: 700;
+line-height: 1.1;
+color: #d5dae1;
+cursor: default;
+pointer-events: none;
+}
+
+.nav-cv ul li:not(:last-child):after {
+  width: 15px;
+height: 2px;
+display: inline-block;
+content: "";
+margin: 0 5px;
+vertical-align: middle;
+background: #d5dae1;
+}
+/**************** COMPLETED *************/
+.nav-cv ul li.completed::before {
+  color: #fff;
+background: #15ac31;
+border: 2px solid #15ac31;
+}
+.nav-cv ul li.active::before {
+  color: #15ac31;
+background: transparent;
+border: 2px solid #15ac31;
+}
+.nav-cv ul li.completed:not(:last-child):after {
+  background-color
+  : #15ac31
+}
+.nav-cv ul li.completed a,
+.nav-cv ul li.active a {
+  color: #46464e;
+}
+.nav-cv ul li.completed  {
+  cursor: pointer;
+}
+.sectionTitle {
+  color: #009ade;
+  font-size: 20px;
+}
+.sectionPara {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.form-group {position: relative;}
+label {
+	position: absolute;
+	top: -10px;
+	background: #fff;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1;
+	color: #555;
+	border-top-left-radius: 3px;
+	left: 13px;
+  padding: 4px;
+  z-index: 100;
+}
+input.input-form {
+	padding: 8px 16px;
+	outline: 0;
+	font-size: 14px;
+	line-height: 1.4;
+	border-radius: 3px;
+	border: 1px solid none;
+	background-color: #fff;
+	box-sizing: border-box;
+	margin-bottom: 0;
+	color: #222;
+}
+.has-error {
+  border: 1px red solid;
+  border-left: 5px red solid;
+}
+.success {
+  opacity: 0;
+  position: absolute;
+  right: 10px;
+  top: 9px;
+  color: #15ac31;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #009ade;
+}
+#bottom-wizard {
+  border-top: 2px solid #ededed;
+  padding-top: 20px;
+  text-align: right;
+margin-top: 30px;
+width: 100%;
+}
+button {
+border: none;
+color: #fff;
+text-decoration: none;
+transition: background .5s ease;
+-moz-transition: background .5s ease;
+-webkit-transition: background .5s ease;
+-o-transition: background .5s ease;
+display: inline-block;
+cursor: pointer;
+outline: none;
+text-align: center;
+background: #009ade;
+position: relative;
+font-size: 14px;
+font-weight: 600;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+-ms-border-radius: 3px;
+border-radius: 3px;
+line-height: 1;
+padding: 12px 30px;
+}
+.input-group-addon {
+  cursor: pointer;
+}
+/********** CHECKBOX *************/
+.container_check {
+  display: block;
+  position: relative;
+  font-size: 14px;
+  padding-left: 30px;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 400;
+  left: 0;
+  top: 0;
+}
+.container_check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.container_check input:checked ~ .checkmark {
+  background-color: #009ade;
+  border: 1px solid transparent;
+}
+.container_check .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: block;
+}
+.container_check .checkmark {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/******** POP UP ********/
+.work_empty {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(170,170,170,0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work_empty_content {
+  background-color: #fff;
+  padding: 38px 58px 26px;
+  border: 1px solid #7997b0;
+  transition: color 0.2s, background-color .25s, border-color .5s, opacity .25s;
+  line-height: 1.5;
+}
+.close_popup {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  cursor: pointer;
+}
+/*.work_empty_content {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  
+}*/
+/********************** CV DESIGN *********************/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap");
+
+.resume {
+width: 794px;
+height: 1123px;
+overflow-y: hidden;
+font-family: 'Open Sans', sans-serif;
+display: grid;
+grid-template-columns: auto auto auto;
+line-height: 18px;
+}
+.resume .sectionTitle {
+font-size: 18px;
+font-weight: 700;
+text-transform: capitalize;
+}
+.sectionTxtBold {
+font-weight: 700;
+text-transform: capitalize;
+display: block;
+}
+.progress-bar {
+margin-top: 5px;
+width: 100%;
+height: 15px;
+background-color: #00315c;
+}
+.progress-bar-white {
+width:50%;
+height: 100%;
+background-color: #fff;
+}
+.resume-left_sections {
+margin-top: 30px;
+}
+
+
+.resume-left {
+background-color: #003D73;
+height: 100%;
+width: 200px;
+padding: 0px 15px;
+color: #fff;
+word-break: break-all;
+}
+.resume-left .name {
+font-size: 28px;
+line-height: 35px;
+font-weight: bold;
+padding-top: 15px;
+}
+.resumeTitle {
+font-size: 14px;
+padding-top: 3px;
+}
+.sectionTitleRight {
+color: #003D73;
+}
+/* head*/
+.personal-info {
+position: relative;
+margin-top: 20px;
+}
+.personal-info-head {
+margin: 10px -15px;
+background-color: #00315c;
+padding: 7px 15px;
+line-height: 1.5;
+}
+.info-list div {
+margin-bottom: 10px;
+}
+
+
+.resume_right {
+padding-left: 15px;
+padding-right: 15px;
+float: right;
+width: 534px;
+letter-spacing: 0.2px;
+}
+.summary {
+padding-top: 15px;
+font-size: 12px;
+color: #343434;
+font-variant-ligatures: none;
+font-weight: 400;
+padding-bottom: 20px;
+}
+.resume_right-sections {
+margin-top: 20px;
+}
+.resume-right_headings {
+border-top: 1px solid #d5d6d6;
+border-bottom: 1px solid #d5d6d6;
+letter-spacing: 0px;
+padding: 5px 0;
+}
+
+/********** WORK SECTION ***********/
+.work {
+display: grid;
+grid-template-columns: auto auto auto;
+margin-top: 10px;
+}
+.work-date {
+width: 100px;
+}
+.start-date,.end-date {
+font-size: 14px;
+color: #343434;
+font-weight: 400;
+display: block;
+}
+.work-info {
+width: 430px
+}
+.work-info span {
+display: block;
+}
+.work-head {
+font-weight: bold;
+line-height: 18px;
+}
+.work-location {
+font-style: italic;
+font-size: 14px;
+font-weight: 400;
+margin-top: 4px;
+margin-bottom: 4px;
+}
+.work-details ul{
+list-style-type: none;
+padding: 0;
+margin: 0;
+font-size: 11px;
+font-weight: 400;
+line-height: 18px;
+color: #343434;
+}
+.resume ul li {
+list-style-type: disc;
+margin: 0 0 0 16px;
+padding: 0;
+}
+canvas {
+display: none;
+}
+@media screen and (max-width: 768px) {
+  .CV {
+    width: 100%;
+    overflow-x: scroll;
+    height: 100vh;
+  }
+}
+
+
+
+
+.skill-added {
+  color: red;
+}

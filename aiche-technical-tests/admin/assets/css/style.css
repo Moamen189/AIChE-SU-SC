@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;500&display=swap');
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* start main rules */
+body {
+	background-color: #f4f4f4;
+	font-size: 16px;
+}
+
+.asterisk{
+	font-size: 30px;
+	position: absolute;
+	right: 30px;
+	top: 8px;
+	color: #d20707;
+}
+/* end main rules */
+/* start login form */
+.login {
+	width:300px;
+	margin: 100px auto; 
+}
+.login input {
+	margin-bottom: 10px;
+}
+.login .form-control {
+	background-color: #eaeaea;
+}
+.login .btn {
+	background-color: #008dde;
+}
+.login h4 {
+	color: #888;
+	text-transform: uppercase;
+	text-align: center; 
+}
+/*end login form */
+
+/***START NAVBAR ***/
+
+.navbar{
+	border-radius: 0;
+	margin-bottom: 0; 
+}
+
+.nav > li > a,
+.navbar-brand {
+	padding:15px 12px;
+}
+
+.navbar-brand {
+	font-size: 1em;
+}
+
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.dropdown-menu {
+	background-color: #3498db;
+}
+
+.dropdown-menu {
+	min-width: 180px;
+	padding: 0;
+	font-size: 1em;
+	border: none;
+	border-radius: 0;
+}
+
+.dropdown-menu > li > a {
+	color: #fff;
+	padding: 10px 15px;
+}
+
+
+/***END NAVBAR ***/
+
+/*** START DASHBOARD PAGE ***/
+
+.home-stats .stat{
+	background-color: #eee;
+	border-radius: 10px;
+	padding: 20px;
+	font-size: 15px;
+	color: #fff;
+}
+
+.home-stats .stat a{
+	color: #fff;
+}
+.home-stats .stat a:hover{
+	text-decoration: none;
+	opacity:0.8;
+}
+
+.home-stats .stat span{
+	display: block;
+	font-size: 60px;
+	color: #fff;
+}
+.home-stats .st-members{background-color: #3498db;}
+
+.home-stats .st-pending{background-color: #c0392b;}
+
+.home-stats .st-items{background-color: #d35400;}
+
+.home-stats .st-comments{background-color: #8e44ad;}
+
+.latest{
+	margin-top: 40px;	
+}
+
+.latest-users{
+	margin-bottom: 0;
+}
+
+.latest-users li{
+	padding: 10px;
+	overflow: hidden;
+}
+
+.latest-users li:nth-child(odd) {
+	background-color: #ddd;
+}
+
+.latest-users .btn-success,
+.latest-users .btn-info {
+	padding: 2px 8px; 
+}
+
+.latest-users .btn-info {
+	margin-right: 5px;
+}
+/*** END DASHBOARD PAGE ***/
+
+/*** start members page ***/
+
+h1{
+	font-size: 45px;
+	margin:40px 0;
+	font-weight: bold;
+	color: #555;
+	letter-spacing: -5px;
+}
+.show-pass{
+	position: absolute;
+	right: -30px;
+	top:7px;
+	color:#337ab7;
+	cursor: pointer;
+}
+.main-table{
+	-webkit-box-shadow:0 3px 10px #ccc;
+	-moz-box-shadow:0 3px 10px #ccc;
+	box-shadow:0 3px 10px #ccc;
+}
+.main-table td {
+	background-color: #eee;
+	vertical-align: middle !important;
+}
+.main-table tr:first-child td{
+	background-color: #333;
+	color: #fff;
+}
+.main-table .btn{
+	padding: 4px 10px;
+}
+/*** end   members page ***/ 
+
+
+/****start category page ***/
+
+.radiocheck {
+	margin-top: 15px;
+
+}
+
+
+.question {
+  background: transparent;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+.question-table:nth-of-type(2n+1) {
+  background: #f9f9f9;
+  border:1px solid #ddd;
+}
+.question-table:nth-of-type(2n) {
+  background: #f4f4f4;
+  border:1px solid #ddd;
+}
+.question > ul {
+  padding-left: 10px;
+}
+.question > .questions-control {
+  float: right;
+}
+
+/****end category page ***/

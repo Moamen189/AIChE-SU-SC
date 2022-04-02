@@ -1,0 +1,157 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body{ 
+	font-family: 'Poppins', sans-serif;
+	background-color: #334251;
+	 background-size:cover ;
+}
+button { 
+	font-family: 'Poppins', sans-serif;
+}
+header {
+	display: flex;
+	width: 90%;
+	height: 10vh;
+	margin: auto;
+	align-items: center;
+}
+.logo-container {
+	display: flex;
+	flex: 1;
+	height: 80px;
+	width: 80px;
+	animation: drop 1.5s ease;
+}
+.presentation {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: auto;
+	min-height: 80vh;
+	align-items: center;
+	justify-content: center;
+}
+
+.intro-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.intro-text .header1 {
+	text-align: center;
+	margin: 20px 0;
+	font-size: 80px;
+	font-weight: 500;
+	color: white;
+	animation: drop 1.5s ease;
+}
+
+.intro-text .pdiv {
+	margin-top: 10px;
+	font-size: 30px;
+	color: white;
+	animation: drop 1.5s ease;
+}
+.intro-text .pdiv1 {
+	margin-top: 10px;
+	font-size: 30px;
+	color: white;
+	animation: drop 1.5s ease;
+	padding: 0 0 40px 0;
+}
+
+.refining{
+	color: #0c65be;
+}
+.cta {
+	display: flex;
+	width: 60%;
+	flex-direction: row;
+	justify-content: space-around;
+	
+}
+
+.cta-add a ,.cta-select a{
+	text-decoration: none;
+    background-color: #0c65be;
+    color: white;
+    border: 3px solid #0c65be ;
+    border-radius: 30px;
+    animation: drop 1.5s ease;
+    display: inline-block;
+    font-family: "Poppins",sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 1px;
+	overflow: hidden;
+	
+}
+.cta-select a {
+	padding: 10px 40px;
+}
+.cta-add a{
+	padding: 10px 60px;
+}
+
+
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	body{ 
+		font-family: 'Poppins', sans-serif;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.presentation {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding: 30px 0;
+	}
+	.logo-container{
+		height: 150px;
+		width: 150px;
+	}
+	.intro-text .header1 {
+		font-size: 100px;
+		padding: 50px 0;
+		
+	}
+	.intro-text .pdiv{
+		font-size: 40px;
+		padding: 10px 0 0 0;
+		
+	}
+	.intro-text .pdiv1{
+		font-size: 40px;
+		padding: 0 0 100px 0;
+	}
+	.cta {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		justify-content: space-around;
+		
+	}
+	.cta-add a {
+		font-size: 35px;
+		padding: 50px 80px ;
+	}
+	.cta-select a {
+		font-size: 35px;
+		padding: 50px 40px;
+	}
+}

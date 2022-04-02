@@ -1,0 +1,5 @@
+[17-Dec-2021 04:19:00 America/New_York] PHP Notice:  Undefined variable: con in /home/aichickj/public_html/trainings/hazop/admin/data.php on line 6
+[17-Dec-2021 04:19:00 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/aichickj/public_html/trainings/hazop/admin/data.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/aichickj/public_html/trainings/hazop/admin/data.php on line 6

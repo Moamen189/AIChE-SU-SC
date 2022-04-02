@@ -1,0 +1,10 @@
+[17-Dec-2021 04:19:41 America/New_York] PHP Notice:  Undefined variable: con in /home/aichickj/public_html/trainings/diploma/admin/data.php on line 6
+[17-Dec-2021 04:19:41 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/aichickj/public_html/trainings/diploma/admin/data.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/aichickj/public_html/trainings/diploma/admin/data.php on line 6
+[17-Dec-2021 04:21:42 America/New_York] PHP Notice:  Undefined variable: con in /home/aichickj/public_html/trainings/diploma/admin/data.php on line 6
+[17-Dec-2021 04:21:42 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/aichickj/public_html/trainings/diploma/admin/data.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/aichickj/public_html/trainings/diploma/admin/data.php on line 6
